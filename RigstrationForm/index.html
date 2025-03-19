@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rigstration Form</title>
+    <style>
+      body {
+        background-color: f2f2f2;
+        margin: 0;
+      }
+      .con {
+        background-color: rgb(146, 146, 181);
+        border: 2px solid none;
+        width: 240px;
+        height: 200px;
+        color: white;
+        padding-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Rigstration Form</h1>
+    <div class="con">
+      <form action="" onsubmit="return validFunction()">
+        <label for="name"
+          >Name:<input type="text" id="name" placeholder="enter your name"
+        /></label>
+        <label for="password"
+          >Email:<input
+            type="password"
+            id="password"
+            placeholder="enter your password"
+        /></label>
+        <button class="submit">submit</button>
+      </form>
+    </div>
+    <script>
+      function validFunction() {
+        var name = document.getElementById("name").value;
+        var password = document.getElementById("password").value;
+
+        if (name == "" || password == "") {
+          alert("please fill all the fields");
+          return false;
+        }
+        if (password.length < 6) {
+          alert("Password must be at least 6 characters long");
+          return false;
+        }
+        alert("Registration Successful");
+        return true;
+      }
+    </script>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rigstration Form</title>
+    <style>
+      body {
+        background-color: f2f2f2;
+        margin: 0;
+      }
+      .con {
+        background-color: rgb(146, 146, 181);
+        border: 2px solid none;
+        width: 240px;
+        height: 200px;
+        color: white;
+        padding-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Rigstration Form</h1>
+    <div class="con">
+      <form action="" onsubmit="return validFunction()">
+        <label for="name"
+          >Name:<input type="text" id="name" placeholder="enter your name"
+        /></label>
+        <label for="password"
+          >Email:<input
+            type="password"
+            id="password"
+            placeholder="enter your password"
+        /></label>
+        <button class="submit">submit</button>
+      </form>
+    </div>
+    <script>
+      function validFunction() {
+        var name = document.getElementById("name").value;
+        var password = document.getElementById("password").value;
+
+        if (name == "" || password == "") {
+          alert("please fill all the fields");
+          return false;
+        }
+        if (password.length < 6) {
+          alert("Password must be at least 6 characters long");
+          return false;
+        }
+        alert("Registration Successful");
+        return true;
+      }
+    </script>
+  </body>
+</html>
